@@ -1,0 +1,11 @@
+---
+# only the main scss file needs front matter
+---
+@import "normalize";
+@import "variables";
+@import "common";
+@import "header";
+@import "footer";
+
+@import "home";
+@import "contact";

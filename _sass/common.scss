@@ -1,0 +1,119 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+html {
+    font-size: 18px;
+}
+@media only screen and (max-width: 1120px) {
+    html {
+        font-size: 16px;
+    }
+}
+body {
+    font-family: $montserrat;
+    font-weight: normal;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    height: auto;
+    overflow: auto;
+    position: static;
+}
+
+/***** Common Styles *****/
+.section {
+  width: 100%;
+  max-width: 1200px; /* max Width of section, Change to what you like */
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.section-row {
+    background-color: $purple;
+}
+.section-row--purple-darker {
+    background-color: $purple-darker;
+}
+.section-row--purple-dark {
+    background-color: $purple-dark;
+}
+.section-row--pink {
+    background-color: $pink;
+}
+.section-row--gradient {
+    background: -moz-linear-gradient(top, $pink, $orange);
+    background: -webkit-linear-gradient(top, $pink, $orange);
+    background: linear-gradient(to bottom, $pink, $orange);
+}
+
+.heading-1 {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 3.157rem;
+    &:after {
+        color: $orange;
+    }
+}
+.heading-2 {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 2.369rem;
+}
+.heading-3 {
+    font-family: $sriracha;
+    font-weight: normal;
+    font-size: 1.777rem;
+}
+.small-text {
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+.quote-text {
+    font-family: $sriracha;
+    font-weight: normal;
+    font-size: 1.333rem;
+}
+.menu-item {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 1.333rem;
+    text-transform: uppercase;
+}
+
+.separator {
+    width: 100px;
+    border-top: 4px solid $orange;
+}
+.separator--centered {
+    margin: 0 auto;
+}
+
+.btn {
+    min-width: 180px;
+    background-color: $green-dark;
+    text-align: center;
+    font-family: $sriracha;
+    color: white;
+    padding: 5px;
+    border: 2px solid $green-dark;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #448027;
+        border-color: #448027;
+    }
+}
+.btn--purple {
+    background-color: $purple-dark;
+    border-color: white;
+    &:hover {
+        background-color: #63164c;
+        border-color: white;
+    }
+}

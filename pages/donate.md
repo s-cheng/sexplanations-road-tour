@@ -1,0 +1,4 @@
+---
+layout: donate
+permalink: /donate
+---
