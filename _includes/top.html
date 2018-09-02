@@ -11,11 +11,21 @@
                 </div>
             </div>
             <nav class="header__links">
-                <a href="/" class="menu-item header__link">Home</a>
-                <a href="/donate" class="menu-item header__link">Donate</a>
-                <a href="" class="menu-item header__link">Tour Dates</a>
-                <a href="" class="menu-item header__link">Trip Log</a>
-                <a href="/contact" class="menu-item header__link">Contact</a>
+                <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                    Home
+                </a>
+                <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__link">
+                    Donate
+                </a>
+                <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                    Tour Dates
+                </a>
+                <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                    Trip Log
+                </a>
+                <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link">
+                    Contact
+                </a>
             </nav>
         </div>
     </header>

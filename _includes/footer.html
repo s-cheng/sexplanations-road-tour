@@ -8,10 +8,21 @@
             please do so and check us out on Facebook, Twitter, Tumblr, and Patreon.
         </div>
         <div class="footer__links">
-            <a href="/donate" class="menu-item footer__link">Donate</a>
-            <a href="" class="menu-item footer__link">Tour Dates</a>
-            <a href="" class="menu-item footer__link">Trip Log</a>
-            <a href="/contact" class="menu-item footer__link">Contact</a>
+            <a href={{ "/" | prepend: site.baseurl }} class="menu-item footer__link">
+                Home
+            </a>
+            <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item footer__link">
+                Donate
+            </a>
+            <a href={{ "/" | prepend: site.baseurl }} class="menu-item footer__link">
+                Tour Dates
+            </a>
+            <a href={{ "/" | prepend: site.baseurl }} class="menu-item footer__link">
+                Trip Log
+            </a>
+            <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item footer__link">
+                Contact
+            </a>
         </div>
     </footer>
 </div>
