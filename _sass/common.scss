@@ -11,7 +11,7 @@
 html {
     font-size: 18px;
 }
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1180px) {
     html {
         font-size: 16px;
     }
@@ -95,6 +95,7 @@ body {
     margin: 0 auto;
 }
 
+/***** Buttons *****/
 .btn {
     min-width: 180px;
     background-color: $green-dark;
@@ -119,6 +120,7 @@ body {
     }
 }
 
+/***** Data Capsules *****/
 .data-capsule__container {
     position: relative;
     width: 300px;
@@ -171,4 +173,9 @@ body {
 }
 .data-capsule.active + .data-capsule__info {
     top: 133px;
+}
+@media only screen and (max-width: 1180px) {
+    .data-capsule.active + .data-capsule__info {
+        top: 120px;
+    }
 }

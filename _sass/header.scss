@@ -66,6 +66,12 @@
     stroke: $black;
     cursor: pointer;
 }
+.header__icon--menu {
+    width: 60px;
+    height: 60px;
+    fill: white;
+    stroke: none;
+}
 .header__links {
     display: flex;
 }
@@ -82,4 +88,29 @@
     font-family: $satisfy;
     font-size: 3rem;
     font-weight: bold;
+}
+.header__link--menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1120px) {
+    .header-section {
+        display: none;
+    }
+    .sticky-header {
+        padding: 10px 25px;
+        .header__link {
+            display: none;
+        }
+        .header__link--sexplanations {
+            display: block;
+            text-align: left;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+        div.header__link--menu {
+            display: block;
+            margin-left: 15px;
+        }
+    }
 }

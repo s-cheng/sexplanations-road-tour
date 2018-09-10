@@ -1,11 +1,15 @@
 <div class="section-row--gradient">
-    <header class="section">
+    <header class="section header-section">
         <div class="header">
             <div class="header__social">
                 <div class="header__social-icons">
-                    {% include icons/twitter.svg %}
+                    <a href="https://twitter.com/elleteedee">
+                        {% include icons/twitter.svg %}
+                    </a>
                     {% include icons/facebook.svg %}
-                    {% include icons/tumblr.svg %}
+                    <a href="https://tumblingdoe.tumblr.com/">
+                        {% include icons/tumblr.svg %}
+                    </a>
                     <a href="https://youtube.com/user/sexplanations">
                         {% include icons/youtube.svg %}
                     </a>
@@ -35,6 +39,9 @@
     <div id="sticky-header-start" class="section home__headline-text">
         <h1 class="home__headline">Sexplanations Road Tour</h1>
         <div class="heading-3 home__subheadline">curious across the country</div>
+        <div class="home__mobile-menu">
+            {% include icons/menu.svg %}
+        </div>
     </div>
 </div>
 
@@ -56,6 +63,9 @@
             <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link">
                 Contact
             </a>
+            <div class="menu-item header__link header__link--menu">
+                {% include icons/menu.svg %}
+            </div>
         </nav>
     </div>
 </header>
