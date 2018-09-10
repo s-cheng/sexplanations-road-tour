@@ -6,7 +6,9 @@
                     {% include icons/twitter.svg %}
                     {% include icons/facebook.svg %}
                     {% include icons/tumblr.svg %}
-                    {% include icons/youtube.svg %}
+                    <a href="https://youtube.com/user/sexplanations">
+                        {% include icons/youtube.svg %}
+                    </a>
                     {% include icons/instagram.svg %}
                 </div>
             </div>
@@ -30,8 +32,30 @@
         </div>
     </header>
 
-    <div class="section home__headline-text">
+    <div id="sticky-header-start" class="section home__headline-text">
         <h1 class="home__headline">Sexplanations Road Tour</h1>
         <div class="heading-3 home__subheadline">curious across the country</div>
     </div>
 </div>
+
+<header id="sticky-header" class="sticky-header">
+    <div class="header">
+        <nav class="header__links">
+            <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__link">
+                Donate
+            </a>
+            <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                Tour Dates
+            </a>
+            <a href={{ "/" | prepend: site.baseurl }} class="header__link header__link--sexplanations">
+                Sexplanations Road Tour
+            </a>
+            <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                Trip Log
+            </a>
+            <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link">
+                Contact
+            </a>
+        </nav>
+    </div>
+</header>

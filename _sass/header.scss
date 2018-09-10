@@ -1,3 +1,50 @@
+.sticky-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $pink;
+    padding: 20px 40px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    z-index: 10;
+    .header__links {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__link {
+        margin-left: 0;
+    }
+    &.visible {
+        display: block;
+        animation: slide-down 0.7s;
+    }
+    &.fade-out {
+        display: block;
+        animation: slide-up 0.6s;
+    }
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slide-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -30,4 +77,9 @@
     &:first-of-type {
         margin-left: 0;
     }
+}
+.header__link--sexplanations {
+    font-family: $satisfy;
+    font-size: 3rem;
+    font-weight: bold;
 }

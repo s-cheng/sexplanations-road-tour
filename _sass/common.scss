@@ -17,13 +17,14 @@ html {
     }
 }
 body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: $montserrat;
     font-weight: normal;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     color: white;
     height: auto;
-    overflow: auto;
     position: static;
 }
 
@@ -116,4 +117,58 @@ body {
         background-color: #63164c;
         border-color: white;
     }
+}
+
+.data-capsule__container {
+    position: relative;
+    width: 300px;
+}
+.data-capsule {
+    position: relative;
+    background-color: $pink;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.data-capsule__label {
+    position: absolute;
+    top: -22px;
+    left: 30px;
+    width: 240px;
+    background-color: $purple-dark;
+    text-align: center;
+    font-family: "Sriracha", cursive;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+.data-capsule__value {
+    text-align: center;
+    font-family: $satisfy;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 40px 30px;
+}
+.data-capsule__info-icon {
+    position: absolute;
+    left: 131px;
+    bottom: -11px;
+    width: 26px;
+    height: 26px;
+    background-color: $green-dark;
+    text-align: center;
+    font-family: serif;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.data-capsule__info {
+    position: absolute;
+    top: 0;
+    background-color: $purple-darker;
+    padding: 50px 20px 20px;
+    border-radius: 20px;
+    transition: top 0.2s ease-out;
+}
+.data-capsule.active + .data-capsule__info {
+    top: 133px;
 }

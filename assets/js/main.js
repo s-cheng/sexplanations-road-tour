@@ -1,7 +1,43 @@
+// link to Sexplanations youtube channel
 const youtubeBtns = document.querySelectorAll('.link-youtube');
-
 youtubeBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
         window.location = 'https://youtube.com/user/sexplanations';
+    });
+});
+
+// show/hide the sticky header depending on page scroll position
+window.addEventListener('scroll', () => {
+    const headerEl = document.getElementById('sticky-header');
+    const stickyHeaderStartEl = document.getElementById('sticky-header-start');
+
+    if (headerEl && stickyHeaderStartEl) {
+        const headerIsSticky = stickyHeaderStartEl.getBoundingClientRect().top <= -200;
+        // when we scrolled down far enough, add the class to make the sticky header visible
+        if (headerIsSticky && !headerEl.classList.contains('visible')) {
+            headerEl.classList.add('visible');
+        }
+        // when we scrolled up far enough, add the class for the fade-out animation
+        else if (!headerIsSticky && headerEl.classList.contains('visible') && !headerEl.classList.contains('fade-out')) {
+            headerEl.classList.add('fade-out');
+            headerEl.classList.remove('visible');
+            // then hide the sticky header after the animation
+            window.setTimeout(() => {
+                headerEl.classList.remove('fade-out');
+            }, 500);
+        }
+    }
+});
+
+// show/hide data capsule info when clicking on info icon
+const dataCapsuleIcons = document.querySelectorAll('.data-capsule__info-icon');
+dataCapsuleIcons.forEach((icon) => {
+    icon.addEventListener('click', () => {
+        const capsule = icon.parentElement;
+        if (capsule.classList.contains('active')) {
+            capsule.classList.remove('active');
+        } else {
+            capsule.classList.add('active');
+        }
     });
 });
