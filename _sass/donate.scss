@@ -1,0 +1,68 @@
+/***** Donate Page Styles *****/
+.donate__overview-section {
+    display: flex;
+    justify-content: space-between;
+}
+.donate__overview-text-col {
+    width: 100%;
+    max-width: 600px;
+    margin-right: 40px;
+}
+.donate__overview-headline {
+    margin-bottom: 20px;
+}
+.donate__overview-quote {
+    margin-top: 30px;
+}
+.donate__overview-quote-author {
+    text-align: right;
+    margin-top: 20px;
+}
+.donate__overview-capsule-col {
+    padding-top: 100px;
+}
+
+.donate__ways-headline {
+    margin-bottom: 20px;
+}
+.donate__ways-text {
+    margin-top: 30px;
+}
+.donate__ways-btns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+.donate__panel {
+    position: relative;
+    max-width: 800px;
+    padding: 50px;
+    border: 2px solid $orange;
+    border-radius: 15px;
+}
+.donate__panel-title {
+    position: absolute;
+    top: -23px;
+    background-color: $purple-dark;
+    padding: 0 20px;
+}
+.donate__panel-btn {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .donate__overview-section {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .donate__ways-btns {
+        flex-direction: column;
+        align-items: flex-start;
+        .btn {
+            margin: 10px 0;
+        }
+    }
+}

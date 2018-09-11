@@ -23,7 +23,58 @@
     {% include top.html %}
 
     <div class="section-row">
-        <div class="home__road"></div>
+        <section class="section">
+            <div class="donate__overview-section home__road">
+                <div class="donate__overview-text-col">
+                    <h2 class="heading-1 donate__overview-headline">Donate</h2>
+                    <div class="separator"></div>
+                    <div class="quote-text donate__overview-quote">
+                        "No one has ever become poor from giving"
+                    </div>
+                    <div class="quote-text donate__overview-quote-author">
+                        - Anne Frank
+                    </div>
+                </div>
+                <div class="donate__overview-capsule-col">
+                    {% include data_capsule.html
+                        label="funds raised"
+                        value="$1000" %}
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section-row--pink">
+        <section class="section">
+            <h2 class="heading-3 donate__ways-headline">
+                Ways to Give
+            </h2>
+            <div class="separator"></div>
+            <div class="donate__ways-text">
+                There are a zillion different ways to contribute to the Sexplanations Road Tour.
+            </div>
+            <div class="donate__ways-btns">
+                <button class="btn">Volunteer</button>
+                <button class="btn">Give</button>
+                <button class="btn">Sponsor</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="section-row--purple-dark">
+        <section class="section">
+            <div class="donate__panel">
+                <h2 class="heading-3 donate__panel-title">Volunteer</h2>
+                <div class="">
+                    For more than four years Sexplanations has been the go-to source for clinical
+                    sex edutainment on Youtube. The host, Dr. Lindsey Doe, shares her experiences
+                    teaching, counseling, coaching, and having sex herself to inspire curiousity.
+                    New videos are published every Wednesday. If you're not subscribed already,
+                    please do so and check us out on Facebook, Twitter, Tumblr, and Patreon.
+                </div>
+                <button class="btn donate__panel-btn">Contact Us</button>
+            </div>
+        </section>
     </div>
 
     {% include footer.html %}

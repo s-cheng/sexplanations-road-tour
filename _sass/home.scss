@@ -15,7 +15,7 @@
     margin-top: -27px;
     margin-left: -354px;
 }
-.home__mobile-menu {
+.home__mobile-menu-icon {
     display: none;
 }
 
@@ -90,10 +90,18 @@
         text-align: center;
         margin: 0;
     }
-    .home__mobile-menu {
+    .home__mobile-menu-icon {
         display: block;
     }
     .home__info-btn {
         margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .home__headline {
+        font-size: 3rem;
+    }
+    .home__subheadline {
+        font-size: 1.4rem;
     }
 }

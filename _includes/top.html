@@ -39,7 +39,7 @@
     <div id="sticky-header-start" class="section home__headline-text">
         <h1 class="home__headline">Sexplanations Road Tour</h1>
         <div class="heading-3 home__subheadline">curious across the country</div>
-        <div class="home__mobile-menu">
+        <div class="home__mobile-menu-icon">
             {% include icons/menu.svg %}
         </div>
     </div>
@@ -69,3 +69,23 @@
         </nav>
     </div>
 </header>
+
+<nav id="mobile-menu" class="header__mobile-menu">
+    <div class="header__mobile-menu-links">
+        <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__mobile-menu-link">
+            Donate
+        </a>
+        <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__mobile-menu-link">
+            Tour Dates
+        </a>
+        <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__mobile-menu-link">
+            Trip Log
+        </a>
+        <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__mobile-menu-link">
+            Contact
+        </a>
+    </div>
+    <div>
+        <div id="mobile-menu-close" class="header__mobile-menu-close">X</div>
+    </div>
+</nav>

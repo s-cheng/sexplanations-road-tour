@@ -29,6 +29,24 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// on mobile, open the nav menu by clicking on a hamburger icon
+const mobileMenuIcons = document.querySelectorAll('.header__icon--menu');
+const mobileMenuEl = document.getElementById('mobile-menu');
+mobileMenuIcons.forEach((icon) => {
+    icon.addEventListener('click', () => {
+        if (mobileMenuEl && !mobileMenuEl.classList.contains('visible')) {
+            mobileMenuEl.classList.add('visible');
+        }
+    });
+});
+// and close the nav menu by clicking on the X
+const mobileMenuCloseEl = document.getElementById('mobile-menu-close');
+mobileMenuCloseEl.addEventListener('click', () => {
+    if (mobileMenuEl && mobileMenuEl.classList.contains('visible')) {
+        mobileMenuEl.classList.remove('visible');
+    }
+});
+
 // show/hide data capsule info when clicking on info icon
 const dataCapsuleIcons = document.querySelectorAll('.data-capsule__info-icon');
 dataCapsuleIcons.forEach((icon) => {

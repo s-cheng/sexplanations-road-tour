@@ -2,9 +2,14 @@
     <div class="data-capsule">
         <div class="data-capsule__label">{{ include.label }}</div>
         <div class="data-capsule__value">{{ include.value }}</div>
+        {% if include.info != nil and include.info != "" %}
         <div class="data-capsule__info-icon">i</div>
+        {% endif %}
     </div>
+
+    {% if include.info != nil and include.info != "" %}
     <div class="data-capsule__info">
         {{ include.info }}
     </div>
+    {% endif %}
 </div>
