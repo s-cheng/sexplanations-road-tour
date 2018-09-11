@@ -1,0 +1,4 @@
+---
+layout: dates
+permalink: /dates
+---
