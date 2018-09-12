@@ -1,24 +1,4 @@
 /***** Home Page Styles *****/
-.home__headline-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 100px;
-}
-.home__headline {
-    font-family: $satisfy;
-    font-size: 6.854rem;
-    line-height: 1;
-    margin-bottom: 0;
-}
-.home__subheadline {
-    margin-top: -27px;
-    margin-left: -354px;
-}
-.home__mobile-menu-icon {
-    display: none;
-}
-
 .home__road {
     height: 500px;
 }
@@ -50,8 +30,14 @@
 }
 .home__videos {
     display: flex;
-    justify-content: center;
     margin: 50px 0;
+}
+.home__video {
+    width: 100%;
+    margin-left: 20px;
+    &:first-of-type {
+        margin-left: 0;
+    }
 }
 .home__videos-btns {
     text-align: center;
@@ -79,29 +65,21 @@
 }
 
 @media only screen and (max-width: 1120px) {
-    .home__headline-text {
-        padding-bottom: 40px;
-    }
-    .home__headline {
-        text-align: center;
-        font-size: 4rem;
-    }
-    .home__subheadline {
-        text-align: center;
-        margin: 0;
-    }
-    .home__mobile-menu-icon {
-        display: block;
-    }
     .home__info-btn {
         margin-bottom: 20px;
     }
 }
-@media only screen and (max-width: 360px) {
-    .home__headline {
-        font-size: 3rem;
+@media only screen and (max-width: 800px) {
+    .home__videos {
+        flex-direction: column;
+        align-items: center;
     }
-    .home__subheadline {
-        font-size: 1.4rem;
+    .home__video {
+        max-width: 500px;
+        margin-top: 20px;
+        margin-left: 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
 }
