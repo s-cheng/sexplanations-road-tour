@@ -2,11 +2,11 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
     .contact__iframe-container {
         position: relative;
         overflow: hidden;
-        padding-top: 56.25%;
+        padding-top: 1210px;
         iframe {
             position: absolute;
             top: 0;

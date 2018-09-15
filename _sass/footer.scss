@@ -12,3 +12,12 @@
     text-decoration: none;
     margin-bottom: 20px;
 }
+@media only screen and (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer__links {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
