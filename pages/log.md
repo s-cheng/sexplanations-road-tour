@@ -1,0 +1,4 @@
+---
+layout: log
+permalink: /log
+---

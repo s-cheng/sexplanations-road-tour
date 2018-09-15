@@ -1,8 +1,6 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    x="0px" y="0px"
+<svg xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
     style="enable-background:new 0 0 512 512;"
-    xml:space="preserve"
     class="header__icon">
     <g>
     	<path d="M336,96c21.2,0,41.3,8.4,56.5,23.5S416,154.8,416,176v160c0,21.2-8.4,41.3-23.5,56.5S357.2,416,336,416H176

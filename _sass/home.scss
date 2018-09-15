@@ -1,6 +1,17 @@
 /***** Home Page Styles *****/
 .home__road {
-    height: 500px;
+    min-height: 300px;
+}
+.home__road-row {
+    display: flex;
+    justify-content: space-between;
+    &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+    }
+}
+.home__graphic {
+    display: none;
+    width: 100%;
 }
 
 .home__info-quote {
@@ -64,12 +75,31 @@
     margin-top: 5px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .home__road-row {
+        padding: 30px;
+    }
+    .home__graphic {
+        display: block;
+        margin: 0 20px;
+    }
+}
 @media only screen and (max-width: 1120px) {
     .home__info-btn {
         margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 800px) {
+    .home__road-row {
+        display: block;
+        .data-capsule__container {
+            margin: 10px auto;
+        }
+    }
+    .home__graphic {
+        width: 300px;
+        margin: 10px auto;
+    }
     .home__videos {
         flex-direction: column;
         align-items: center;

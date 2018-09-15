@@ -52,11 +52,16 @@ body {
 }
 .section-row--gradient {
     background: $pink;
-    background: bottom -110px left/1700px repeat-x url("/assets/images/skyline.png");
-    background: bottom -110px left/1700px repeat-x url("/assets/images/skyline.png"), -moz-linear-gradient(top, $pink, $orange);
-    background: bottom -110px left/1700px repeat-x url("/assets/images/skyline.png"), -webkit-linear-gradient(top, $pink, $orange);
-    background: bottom -110px left/1700px repeat-x url("/assets/images/skyline.png"), linear-gradient(to bottom, $pink, $orange);;
-    padding-bottom: 8rem;
+    background: bottom -84px left -5px/1200px repeat-x url("/assets/images/skyline.svg");
+    background: bottom -84px left -5px/1200px repeat-x url("/assets/images/skyline.svg"), -moz-linear-gradient(top, $pink, $orange);
+    background: bottom -84px left -5px/1200px repeat-x url("/assets/images/skyline.svg"), -webkit-linear-gradient(top, $pink, $orange);
+    background: bottom -84px left -5px/1200px repeat-x url("/assets/images/skyline.svg"), linear-gradient(to bottom, $pink, $orange);;
+    padding-bottom: 6rem;
+}
+.section-row--road {
+    background: $purple;
+    background: top center/1200px no-repeat url('/assets/images/road.svg');
+    background: top center/1200px no-repeat url('/assets/images/road.svg'), $purple;
 }
 
 .heading-1 {
@@ -144,6 +149,7 @@ body {
 .data-capsule__container {
     position: relative;
     width: 300px;
+    flex: none;
 }
 .data-capsule {
     position: relative;
@@ -200,23 +206,13 @@ body {
     }
 }
 
-@media only screen and (max-width: 1120px) {
-    .section-row--gradient {
-        background: $pink;
-        background: bottom -130px left/1700px repeat-x url("/assets/images/skyline.png");
-        background: bottom -130px left/1700px repeat-x url("/assets/images/skyline.png"), -moz-linear-gradient(top, $pink, $orange);
-        background: bottom -130px left/1700px repeat-x url("/assets/images/skyline.png"), -webkit-linear-gradient(top, $pink, $orange);
-        background: bottom -130px left/1700px repeat-x url("/assets/images/skyline.png"), linear-gradient(to bottom, $pink, $orange);;
-        padding-bottom: 7rem;
+@media only screen and (max-width: 1200px) {
+    .section-row--road {
+        background: $purple;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1120px) {
     .section-row--gradient {
-        background: $pink;
-        background: bottom -160px left/1700px repeat-x url("/assets/images/skyline.png");
-        background: bottom -160px left/1700px repeat-x url("/assets/images/skyline.png"), -moz-linear-gradient(top, $pink, $orange);
-        background: bottom -160px left/1700px repeat-x url("/assets/images/skyline.png"), -webkit-linear-gradient(top, $pink, $orange);
-        background: bottom -160px left/1700px repeat-x url("/assets/images/skyline.png"), linear-gradient(to bottom, $pink, $orange);;
         padding-bottom: 5rem;
     }
 }
