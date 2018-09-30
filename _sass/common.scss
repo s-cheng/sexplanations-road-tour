@@ -60,8 +60,8 @@ body {
 }
 .section-row--road {
     background: $purple;
-    background: top center/1200px no-repeat url('/assets/images/road.svg');
-    background: top center/1200px no-repeat url('/assets/images/road.svg'), $purple;
+    background: top center/1200px no-repeat url('/assets/images/road-landscape.svg');
+    background: top center/1200px no-repeat url('/assets/images/road-landscape.svg'), $purple;
 }
 
 .heading-1 {
@@ -96,6 +96,15 @@ body {
     font-weight: bold;
     font-size: 1.333rem;
     text-transform: uppercase;
+}
+.link {
+    color: $green;
+    &:hover {
+        color: $green-dark;
+    }
+    &:visited {
+        color: $green;
+    }
 }
 
 .separator {

@@ -6,6 +6,22 @@ youtubeBtns.forEach((btn) => {
     });
 });
 
+// link to Donate page
+const donateBtns = document.querySelectorAll('.link-donate');
+donateBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/donate';
+    });
+});
+
+// link to FAQ section on Home page
+const faqBts = document.querySelectorAll('.link-faq');
+faqBts.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/#faq';
+    });
+});
+
 // show/hide the sticky header depending on page scroll position
 window.addEventListener('scroll', () => {
     const headerEl = document.getElementById('sticky-header');
