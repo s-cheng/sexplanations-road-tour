@@ -36,6 +36,7 @@ body {
   margin: 0 auto;
 }
 .section--first {
+    position: relative;
     padding-top: 10px;
 }
 .section-row {
@@ -136,7 +137,7 @@ body {
     text-align: center;
     font-family: $sriracha;
     color: white;
-    padding: 5px;
+    padding: 5px 20px;
     border: 2px solid $green-dark;
     border-radius: 20px;
     cursor: pointer;
@@ -151,6 +152,15 @@ body {
     &:hover {
         background-color: #63164c;
         border-color: white;
+    }
+}
+.btn--purple-border {
+    background-color: white;
+    color: $purple-dark;
+    border-color: $purple-dark;
+    &:hover {
+        background-color: #fadcf1;
+        border-color: $purple-dark;
     }
 }
 
@@ -209,12 +219,40 @@ body {
 .data-capsule.active + .data-capsule__info {
     top: 133px;
 }
+
+/***** Donation Services Box *****/
+.donation-services {
+    background-color: white;
+    padding: 30px;
+}
+.donation-services__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.donation-services__link {
+    max-width: 300px;
+    text-decoration: none;
+    margin: 15px;
+}
+.donation-services__link--mail {
+    display: flex;
+    align-items: center;
+}
+.donation-services__logo {
+    width: 100%;
+}
+.donation-services__link-text {
+    color: $black;
+    margin-left: 15px;
+}
+
 @media only screen and (max-width: 1180px) {
     .data-capsule.active + .data-capsule__info {
         top: 120px;
     }
 }
-
 @media only screen and (max-width: 1200px) {
     .section-row--road {
         background: $purple;
@@ -223,5 +261,10 @@ body {
 @media only screen and (max-width: 1120px) {
     .section-row--gradient {
         padding-bottom: 5rem;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .donation-services {
+        padding: 10px;
     }
 }

@@ -25,7 +25,30 @@
     <div class="section-row--road">
         <section class="section section--first">
             <div class="home__road">
-                <div class="home__road-row">
+                <div class="home__donation-box">
+                    <h2 class="heading-3 home__donation-box-headline">Welcome, Adventurer!</h2>
+                    <div class="home__donation-box-text">
+                        If you’re here, that means you have some interest in seeing our
+                        Road Tour in a town or city near you. Driving around the country,
+                        stopping in towns which might not have great access to sex education
+                        and setting up a stage to teach anyone who shows up about anatomy,
+                        pleasure, hygiene, and consent - anything our audiences want to know.
+                        Want to help? Great! Here are a few places we could use your
+                        assistance through giving:
+                    </div>
+                    {% include donation_services.html %}
+                    <div class="home__donation-box-btns">
+                        <button class="home__donation-box-btn btn link-faq">FAQs</button>
+                        <button class="home__donation-box-btn btn btn--purple-border">
+                            Other Ways to Contribute
+                        </button>
+                    </div>
+                    <div class="home__donation-box-rv">
+                        {% include graphics/mobile-home.svg %}
+                    </div>
+                </div>
+
+                <!-- <div class="home__road-row">
                     {% include data_capsule.html
                         label="shows booked"
                         value="thirty"
@@ -66,25 +89,34 @@
                         value="thirty"
                         info="Our goal is to visit everyone! Learn about how you can help us here." %}
                     {% include graphics/pond-foreground.svg %}
-                </div>
+                </div> -->
+            </div>
+
+            <div class="home__road-foreground">
+                {% include graphics/pond-foreground.svg %}
             </div>
         </section>
     </div>
 
     <div class="section-row--purple-dark">
         <section class="section">
-            <h2 class="heading-3 home__info-quote">
-                Here is a story or quotation about Dr. Doe's intention to do this tour and a show
-                of gratitude for everyone's support!
+            <h2 class="heading-3 home__info-headline">
+                What we're doing
             </h2>
             <div class="separator separator--centered"></div>
-            <div class="home__info-headline">We're hitting the road!</div>
             <div class="home__info-text">
-                For more than four years Sexplanations has been the go-to source for clinical
-                sex edutainment on Youtube. The host, Dr. Lindsey Doe, shares her experiences
-                teaching, counseling, coaching, and having sex herself to inspire curiousity.
-                New videos are published every Wednesday. If you're not subscribed already,
-                please do so and check us out on Facebook, Twitter, Tumblr, and Patreon.
+                Over the past five years, we've created nearly 300 videos on sexual health,
+                enjoyment, and history. The channel just passed the half-million subscriber
+                mark earlier this year and all of this is in no small part thanks to you --
+                fans who value comprehensive sex education and those of you who also have
+                the ability to provide financial backing so that we keep the show free for
+                as large of a viewing platform as possible.
+            </div>
+            <div class="home__info-text">
+                But now, we’re hitting the road! Everyone who donates gets a ballot to vote
+                on two places you’d like us to sex educate. We have a starting list of tour
+                locations and we’ll add more just as quickly as we hear from you.
+                Got questions? Check out our FAQs. Just want to join in the excitement? Donate now.
             </div>
             <div class="home__info-btns">
                 <button class="home__info-btn btn link-donate">Donate</button>
@@ -98,6 +130,10 @@
             <h2 class="heading-3 home__videos-headline">
                 What will we be learning?
             </h2>
+            <div class="home__videos-text">
+                For more than four years, Sexplanations has been the go-to source for
+                clinical sex edutainment on YouTube.
+            </div>
             <div class="separator separator--centered"></div>
             <div class="home__videos">
                 <div class="home__video">
