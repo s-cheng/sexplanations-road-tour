@@ -1,4 +1,8 @@
+{% if include.standalone %}
+<div class="donation-services donation-services--standalone">
+{% else %}
 <div class="donation-services">
+{% endif %}
     <div class="donation-services__logos">
         <a href="/donate" class="donation-services__link">
             <img src="/assets/images/patreon.png"

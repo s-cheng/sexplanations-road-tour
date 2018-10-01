@@ -225,6 +225,10 @@ body {
     background-color: white;
     padding: 30px;
 }
+.donation-services--standalone {
+    max-width: 1000px;
+    margin: 40px auto;
+}
 .donation-services__logos {
     display: flex;
     flex-wrap: wrap;

@@ -6,6 +6,14 @@ youtubeBtns.forEach((btn) => {
     });
 });
 
+// link to FAQ section on Home page
+const faqBts = document.querySelectorAll('.link-faq');
+faqBts.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/#faq';
+    });
+});
+
 // link to Donate page
 const donateBtns = document.querySelectorAll('.link-donate');
 donateBtns.forEach((btn) => {
@@ -14,11 +22,19 @@ donateBtns.forEach((btn) => {
     });
 });
 
-// link to FAQ section on Home page
-const faqBts = document.querySelectorAll('.link-faq');
-faqBts.forEach((btn) => {
+// link to Services section on Donate page
+const servicesBtns = document.querySelectorAll('.link-donation-services');
+servicesBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-        window.location = '/#faq';
+        window.location = '/donate#services';
+    });
+});
+
+// link to Contact page
+const contactBtns = document.querySelectorAll('.link-contact');
+contactBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/contact';
     });
 });
 

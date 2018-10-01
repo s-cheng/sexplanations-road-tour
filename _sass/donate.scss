@@ -5,8 +5,7 @@
 }
 .donate__overview-text-col {
     width: 100%;
-    max-width: 600px;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 .donate__overview-headline {
     margin-bottom: 20px;
@@ -15,11 +14,27 @@
     margin-top: 30px;
 }
 .donate__overview-quote-author {
+    max-width: 600px;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.donate__overview-text {
+    margin-bottom: 20px;
+}
+.donate__overview-text-author {
+    text-align: right;
+    font-family: $satisfy;
+    margin-bottom: 30px;
 }
 .donate__overview-capsule-col {
     padding-top: 100px;
+}
+.donate__overview-rv {
+    margin-top: 40px;
+}
+.donate__overview-logo {
+    margin-top: 30px;
 }
 
 .donate__ways-headline {
@@ -31,14 +46,34 @@
 .donate__ways-btns {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 1000px;
     margin-top: 30px;
+    .btn {
+        margin: 10px 0;
+    }
+}
+.donate__ways-btn {
+    flex: 0;
+}
+.donate__ways-graphic {
+    display: block;
+    width: 180px;
 }
 
+.donate__panel-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    .donate__ways-graphic {
+        margin: 0 25px;
+    }
+}
 .donate__panel {
     position: relative;
     max-width: 800px;
     padding: 50px;
+    margin-top: 10px;
     border: 2px solid $orange;
     border-radius: 15px;
 }
@@ -48,21 +83,51 @@
     background-color: $purple-dark;
     padding: 0 20px;
 }
+.donate__panel-text {
+    margin-top: 20px;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
 .donate__panel-btn {
     margin-top: 30px;
+}
+
+.donate__rv-img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
     .donate__overview-section {
         flex-direction: column;
     }
+    .donate__overview-capsule-col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .donate__overview-logo {
+        width: 300px;
+        margin: 30px;
+    }
 }
 @media only screen and (max-width: 700px) {
     .donate__ways-btns {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         .btn {
-            margin: 10px 0;
+            margin-bottom: 20px;
         }
+    }
+    .donate__panel-row {
+        padding: 20px 0;
+        .donate__ways-graphic {
+            display: none;
+        }
+    }
+    .donate__panel {
+        padding: 35px;
     }
 }
