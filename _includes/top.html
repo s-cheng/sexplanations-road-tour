@@ -19,19 +19,39 @@
                 </div>
             </div>
             <nav class="header__links">
+                {% if include.page == "home" %}
+                <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Home
                 </a>
+                {% if include.page == "donate" %}
+                <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Donate
                 </a>
+                {% if include.page == "dates" %}
+                <a href={{ "/dates" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/dates" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Tour Dates
                 </a>
+                {% if include.page == "log" %}
+                <a href={{ "/log" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/log" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Trip Log
                 </a>
+                {% if include.page == "contact" %}
+                <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Contact
                 </a>
             </nav>
