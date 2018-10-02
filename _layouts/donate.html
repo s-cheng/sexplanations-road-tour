@@ -90,15 +90,15 @@
             <div class="donate__ways-btns">
                 <div class="donate__ways-btn">
                     {% include graphics/volunteer.svg %}
-                    <button class="btn">Volunteer</button>
+                    <button class="btn link-volunteer">Volunteer</button>
                 </div>
                 <div class="donate__ways-btn">
                     {% include graphics/give.svg %}
-                    <button class="btn">Give</button>
+                    <button class="btn link-give">Give</button>
                 </div>
                 <div class="donate__ways-btn">
                     {% include graphics/sponsor.svg %}
-                    <button class="btn">Sponsor</button>
+                    <button class="btn link-sponsor">Sponsor</button>
                 </div>
             </div>
         </section>
@@ -106,7 +106,7 @@
 
     <div class="section-row--purple-dark">
         <section class="section">
-            <div class="donate__panel-row">
+            <div id="volunteer" class="donate__panel-row">
                 <div class="donate__panel">
                     <h2 class="heading-3 donate__panel-title">Volunteer</h2>
                     <div class="donate__panel-text">
@@ -121,7 +121,7 @@
                 {% include graphics/volunteer.svg %}
             </div>
 
-            <div class="donate__panel-row">
+            <div id="give" class="donate__panel-row">
                 {% include graphics/give.svg %}
                 <div class="donate__panel">
                     <h2 class="heading-3 donate__panel-title">Give</h2>
@@ -140,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="donate__panel-row">
+            <div id="sponsor" class="donate__panel-row">
                 <div class="donate__panel">
                     <h2 class="heading-3 donate__panel-title">Sponsor</h2>
                     <div class="donate__panel-text">
