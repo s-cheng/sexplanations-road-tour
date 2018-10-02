@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Generic -->
+    <meta charset="utf-8">
+
+    <title>Sexplanations Road Tour | {{page.title}}</title>
+    <meta name="description" content="Sexplanations Road Tour | {{page.title}}">
+    <link rel="canonical" href="roadtour.sexplanations.com{{page.permalink}}">
+    <link rel="shortcut icon" type="image/x-icon" href={{ "/favicon.ico?" | prepend: site.baseurl }}>
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Sriracha" rel="stylesheet">
+    <link href={{ "/css/main.css" | prepend: site.baseurl }} rel="stylesheet">
+</head>
+
+<body>
+    {% include top.html %}
+
+    <div class="section-row">
+        <section class="section section--first">
+            <div class="home__road">
+                <h2 class="heading-1 default__headline">{{page.title}}</h2>
+                <div class="separator"></div>
+                <div class="default__content">
+                    {{content}}
+                </div>
+            </div>
+        </section>
+    </div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src={{ "/assets/js/main.js" | prepend: site.baseurl }}></script>
+</body>
