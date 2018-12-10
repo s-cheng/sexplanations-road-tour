@@ -222,11 +222,12 @@ body {
 
 /***** Donation Services Box *****/
 .donation-services {
+    max-width: 1000px;
     background-color: white;
     padding: 30px;
+    margin: 0 auto;
 }
 .donation-services--standalone {
-    max-width: 1000px;
     margin: 40px auto;
 }
 .donation-services__logos {
@@ -238,7 +239,7 @@ body {
 .donation-services__link {
     max-width: 300px;
     text-decoration: none;
-    margin: 15px;
+    margin: 15px 30px;
 }
 .donation-services__link--mail {
     display: flex;

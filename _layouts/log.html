@@ -7,7 +7,7 @@
     <title>Sexplanations Road Tour | Trip Log</title>
     <meta name="description"
         content="Driving around the country, stopping in towns which might not have great access to sex education and setting up a stage to teach anyone who shows up about anatomy, pleasure, hygiene, and consent - anything our audiences want to know. Want to help? Here's your chance!">
-    <link rel="canonical" href="curiousroadtour.com/log">
+    <link rel="canonical" href="https://curiousroadtour.com/log">
     <link rel="shortcut icon" type="image/x-icon" href={{ "/favicon.ico?" | prepend: site.baseurl }}>
 
     <!-- Mobile -->
@@ -26,11 +26,23 @@
 
     <div class="section-row">
         <section class="section section--first">
-            <div class="home__road">
+            <div class="">
                 <h2 class="heading-1 donate__overview-headline">Trip Log</h2>
                 <div class="separator"></div>
-                <div class="quote-text donate__overview-quote">
+                <!-- <div class="quote-text donate__overview-quote">
                     Coming Soon!
+                </div> -->
+                <div class="log__feeds">
+                    <div class="log__tumblr-feed">
+                        {{ content }}
+                    </div>
+                    <div class="log__twitter-feed">
+                        <a class="twitter-timeline"
+                            href="https://twitter.com/elleteedee?ref_src=twsrc%5Etfw">
+                            Tweets by elleteedee
+                        </a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
                 </div>
             </div>
         </section>
