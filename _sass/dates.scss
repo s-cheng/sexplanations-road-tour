@@ -1,0 +1,43 @@
+.dates__stops-section {
+    display: flex;
+    justify-content: space-between;
+}
+.dates__stops-info-col {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 100px;
+}
+.dates__stops-headline {
+    margin-top: 30px;
+}
+.dates__stops-subheadline {
+    background-color: $purple-dark;
+    padding: 20px;
+    margin: 10px 0;
+}
+.dates__stop {
+    padding: 20px;
+    border-bottom: 2px solid $purple-dark;
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+.dates__stop-location {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dates__stops-map-col {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dates__stops-info-col {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .dates__stops-section {
+        flex-direction: column;
+    }
+}
