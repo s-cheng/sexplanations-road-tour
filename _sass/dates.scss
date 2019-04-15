@@ -1,14 +1,12 @@
+.dates__info-box {
+    width: 100%;
+    background-color: $purple-dark;
+    padding: 15px 0;
+}
 .dates__stops-headline {
     width: 100%;
     max-width: 300px;
     margin-top: 30px;
-}
-.dates__stops-subheadline {
-    width: 100%;
-    max-width: 300px;
-    background-color: $purple-dark;
-    padding: 20px;
-    margin: 10px 0;
 }
 .dates__stops {
     display: flex;
