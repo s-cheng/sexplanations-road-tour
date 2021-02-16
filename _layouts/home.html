@@ -5,90 +5,80 @@
     <meta charset="utf-8">
 
     <title>Sexplanations Road Tour</title>
-    <meta name="description" content="Sexplanations Road Tour">
-    <meta name="robots" content="noindex, nofollow" />
-    <link rel="canonical" href="s-cheng.github.io/sexplanations-road-tour/index.html">
+    <meta name="description"
+        content="Driving around the country, stopping in towns which might not have great access to sex education and setting up a stage to teach anyone who shows up about anatomy, pleasure, hygiene, and consent - anything our audiences want to know. Want to help? Here's your chance!">
+    <link rel="canonical" href="https://curiousroadtour.com">
+    <link rel="shortcut icon" type="image/x-icon" href={{ "/favicon.ico?" | prepend: site.baseurl }}>
 
     <!-- Mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Sriracha" rel="stylesheet">
     <link href={{ "/css/main.css" | prepend: site.baseurl }} rel="stylesheet">
+
+    <!-- Social -->
+    {% include social_meta.html %}
 </head>
 
 <body>
-    {% include top.html %}
+    {% include top.html page="home" %}
 
     <div class="section-row--road">
         <section class="section section--first">
             <div class="home__road">
-                <div class="home__road-row">
-                    {% include data_capsule.html
-                        label="shows booked"
-                        value="thirty"
-                        info="Our goal is to visit everyone! Learn about how you can help us here." %}
-                    {% include graphics/mountains.svg %}
+                <div class="home__donation-box">
+                    <h2 class="heading-3 home__donation-box-headline">Welcome, Adventurer!</h2>
+                    <div class="home__donation-box-text">
+                        If you’re here, that means you have some interest in seeing our
+                        Road Tour in a town or city near you. Driving around the country,
+                        stopping in towns which might not have great access to sex education
+                        and setting up a stage to teach anyone who shows up about anatomy,
+                        pleasure, hygiene, and consent - anything our audiences want to know.
+                        Want to help? Great! Join our Patreon here:
+                    </div>
+                    {% include donation_services.html %}
+                    <div class="home__donation-box-btns">
+                        <button class="home__donation-box-btn btn link-faq">FAQs</button>
+                        <button class="home__donation-box-btn btn btn--purple-border link-donate">
+                            Other Ways to Contribute
+                        </button>
+                    </div>
+                    <div class="home__donation-box-rv">
+                        {% include graphics/mobile-home.svg %}
+                    </div>
                 </div>
-                <div class="home__road-row">
-                    {% include data_capsule.html
-                        label="shows booked"
-                        value="thirty"
-                        info="Our goal is to visit everyone! Learn about how you can help us here." %}
-                    {% include graphics/urban.svg %}
-                </div>
-                <div class="home__road-row">
-                    {% include data_capsule.html
-                        label="shows booked"
-                        value="thirty"
-                        info="Our goal is to visit everyone! Learn about how you can help us here." %}
-                    {% include graphics/suburbia.svg %}
-                </div>
-                <div class="home__road-row">
-                    {% include data_capsule.html
-                        label="shows booked"
-                        value="thirty"
-                        info="Our goal is to visit everyone! Learn about how you can help us here." %}
-                    {% include graphics/farm.svg %}
-                </div>
-                <div class="home__road-row">
-                    {% include data_capsule.html
-                        label="shows booked"
-                        value="thirty"
-                        info="Our goal is to visit everyone! Learn about how you can help us here." %}
-                    {% include graphics/mobile-home.svg %}
-                </div>
-                <div class="home__road-row">
-                    {% include data_capsule.html
-                        label="shows booked"
-                        value="thirty"
-                        info="Our goal is to visit everyone! Learn about how you can help us here." %}
-                    {% include graphics/foreground.svg %}
-                </div>
+            </div>
+
+            <div class="home__road-foreground">
+                {% include graphics/pond-foreground.svg %}
             </div>
         </section>
     </div>
 
     <div class="section-row--purple-dark">
         <section class="section">
-            <h2 class="heading-3 home__info-quote">
-                Here is a story or quotation about Dr. Doe's intention to do this tour and a show
-                of gratitude for everyone's support!
+            <h2 class="heading-3 home__info-headline">
+                What we're doing
             </h2>
             <div class="separator separator--centered"></div>
-            <div class="home__info-headline">We're hitting the road!</div>
             <div class="home__info-text">
-                For more than four years Sexplanations has been the go-to source for clinical
-                sex edutainment on Youtube. The host, Dr. Lindsey Doe, shares her experiences
-                teaching, counseling, coaching, and having sex herself to inspire curiousity.
-                New videos are published every Wednesday. If you're not subscribed already,
-                please do so and check us out on Facebook, Twitter, Tumblr, and Patreon.
+                Over the past five years, we've created nearly 300 videos on sexual health,
+                enjoyment, and history. The channel just passed the half-million subscriber
+                mark earlier this year and all of this is in no small part thanks to you --
+                fans who value comprehensive sex education and those of you who also have
+                the ability to provide financial backing so that we keep the show free for
+                as large of a viewing platform as possible.
+            </div>
+            <div class="home__info-text">
+                But now, we’re hitting the road! Everyone who donates gets a ballot to vote
+                on two places you’d like us to sex educate. We have a starting list of tour
+                locations and we’ll add more just as quickly as we hear from you.
+                Got questions? Check out our FAQs. Just want to join in the excitement? Donate now.
             </div>
             <div class="home__info-btns">
-                <button class="home__info-btn btn">Donate</button>
-                <button class="home__info-btn btn btn--purple">Trip Log</button>
+                <button class="home__info-btn btn link-donate">Donate</button>
+                <button class="home__info-btn btn btn--purple link-faq">FAQs</button>
             </div>
         </section>
     </div>
@@ -98,28 +88,35 @@
             <h2 class="heading-3 home__videos-headline">
                 What will we be learning?
             </h2>
+            <div class="home__videos-text">
+                For more than four years, Sexplanations has been the go-to source for
+                clinical sex edutainment on YouTube.
+            </div>
             <div class="separator separator--centered"></div>
             <div class="home__videos">
                 <div class="home__video">
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bsYU6lA2roc"
+                        <iframe width="560" height="315" title="Bad Sex Ed video"
+                        src="https://www.youtube.com/embed/bsYU6lA2roc"
                         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="home__video">
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SqdF0AL2GBQ"
+                        <iframe width="560" height="315" title="Definition of Sex video"
+                            src="https://www.youtube.com/embed/SqdF0AL2GBQ"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="home__video">
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vW3vyaFinYk"
+                        <iframe width="560" height="315" title="The Clitoris video"
+                            src="https://www.youtube.com/embed/vW3vyaFinYk"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-            <div class="home__videos-btns">
+            <div id="faq" class="home__videos-btns">
                 <button class="btn link-youtube">View More</button>
             </div>
         </section>
@@ -127,16 +124,93 @@
 
     <div class="section-row--purple-dark">
         <section class="section">
-            <h2 class="heading-3">Thank you.</h2>
+            <h2 class="heading-3 home__thanks-headline">
+                Frequently Asked Questions
+            </h2>
             <div class="home__thanks-text">
-                For more than four years Sexplanations has been the go-to source for clinical
-                sex edutainment on Youtube. The host, Dr. Lindsey Doe, shares her experiences
-                teaching, counseling, coaching, and having sex herself to inspire curiousity.
-                New videos are published every Wednesday. If you're not subscribed already,
-                please do so and check us out on Facebook, Twitter, Tumblr, and Patreon.
+                This is a big journey, Doe-Nation and there are a ton of questions. Here are a
+                few that we’ve heard, we’ll sure there will be many more!
             </div>
             <div class="separator"></div>
-            <div class="home__lists">
+
+            <div class="home__faq-question">
+                Q01: What are you doing on this trip?  What are your goals?
+            </div>
+            <div class="home__faq-answer">
+                A01: AWESOME QUESTION! We’re going around the country to set up presentations
+                and answer whatever sex-related questions we can. We are hoping to focus on
+                communities that might not have the availability of online platforms or
+                well-structured school curriculums, as they inherently have the most to benefit.
+            </div>
+
+            <div class="home__faq-question">
+                Q02: When will this trip happen?
+            </div>
+            <div class="home__faq-answer">
+                A02: GLAD YOU ASKED! Our current goal is to start this tour in early December
+                and keep it going through March or even longer.
+            </div>
+
+            <div class="home__faq-question">
+                Q03: Where do you plan on going?
+            </div>
+            <div class="home__faq-answer">
+                A03: ANOTHER GREAT QUESTION! By supporting this project, you will get to
+                nominate (not one, but) two locations for the tour to stop. During the planning
+                stages of the tour, all the nominations will be tallied to plan the most
+                geographically inclusive tour possible.
+            </div>
+
+            <div class="home__faq-question">
+                Q04: Will the weekly Sexplanations videos still be happening?
+            </div>
+            <div class="home__faq-answer">
+                A04: I KNEW YOU’D ASK. Yes.
+            </div>
+
+            <div class="home__faq-question">
+                Q05: How can I support the Road Head tour?
+            </div>
+            <div class="home__faq-answer">
+                A05: BEST! QUESTION! EVER! Our Patreon page
+                is <a href="https://www.patreon.com/sexedroadtour" class="link">
+                    https://www.patreon.com/sexedroadtour</a>.
+                And here are some <a href="/donate#services" class="link">other ways to donate</a>.
+            </div>
+
+            <div class="home__faq-question">
+                Q06: What kinds of perks are available for supporting the tour?
+            </div>
+            <div class="home__faq-answer">
+                A06: YOUR CURIOSITY IS FABULOUS! Firstly, everyone who supports the tour gets
+                to nominate two tour stops. This is ensure the trip is not isolated to just
+                those communities that provide support. Keep in mind that none of the
+                following lists are complete. Physical perks include postcards, certificates,
+                and artwork. Digital perks include access to blogs, vlogs, and livestreams.
+                Altruistic perks include providing food, gas, laundry and showers for the
+                travellers. Donor-level perks include naming sperm on the RV, naming the RV
+                itself, and naming the website. There will also be some Meatus (“Meet Us”)
+                perks, too. Check out all the links above for more!
+            </div>
+
+            <div class="home__faq-question">
+                Q07: Are my contributions tax-deductible?
+            </div>
+            <div class="home__faq-answer">
+                A07: Contributions made before November 28, 2019 are tax-deductible through our
+                former fiscal sponsor; donors will receive tax receipts on or before January 31,
+                2020. Contributions made after November 28, 2019 are not tax-deductible.
+            </div>
+
+            <div class="home__faq-question">
+                Q08: Are these questions <strong>actually</strong> frequently asked, or
+                just <strong>probably</strong> frequently asked?
+            </div>
+            <div class="home__faq-answer">
+                A08: Hmmmmm… nobody actually asked this but… Probably.
+            </div>
+
+            <!-- <div class="home__lists">
                 <div class="home__list">
                     <div class="quote-text home__list-title">
                         Planning Team
@@ -187,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </div>
 

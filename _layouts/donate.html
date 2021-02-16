@@ -5,22 +5,24 @@
     <meta charset="utf-8">
 
     <title>Sexplanations Road Tour | Donate</title>
-    <meta name="description" content="Sexplanations Road Tour | Donate">
-    <meta name="robots" content="noindex, nofollow" />
-    <link rel="canonical" href="s-cheng.github.io/sexplanations-road-tour/donate.html">
+    <meta name="description"
+        content="Driving around the country, stopping in towns which might not have great access to sex education and setting up a stage to teach anyone who shows up about anatomy, pleasure, hygiene, and consent - anything our audiences want to know. Want to help? Here's your chance!">
+    <link rel="canonical" href="https://curiousroadtour.com/donate">
+    <link rel="shortcut icon" type="image/x-icon" href={{ "/favicon.ico?" | prepend: site.baseurl }}>
 
     <!-- Mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Sriracha" rel="stylesheet">
     <link href={{ "/css/main.css" | prepend: site.baseurl }} rel="stylesheet">
+
+    <!-- Social -->
+    {% include social_meta.html %}
 </head>
 
 <body>
-    {% include top.html %}
+    {% include top.html page="donate" %}
 
     <div class="section-row">
         <section class="section section--first">
@@ -34,11 +36,28 @@
                     <div class="quote-text donate__overview-quote-author">
                         - Anne Frank
                     </div>
+
+                    <div class="donate__overview-text">
+                        This trip cannot and will not be possible with out you. From telling us
+                        where to go to funding breakfasts and hot showers, you (yes, YOU!) are
+                        instrumental to the success and reach of this project.
+                    </div>
+                    <div class="donate__overview-text">
+                        No matter how big or small you feel your contribution may be, your
+                        donation will help us reach communities and people who don’t have access
+                        to sex education, and can make the world a happier place.
+                    </div>
+                    <div class="donate__overview-text-author">
+                        - Dr. Lindsey Doe
+                    </div>
                 </div>
                 <div class="donate__overview-capsule-col">
                     {% include data_capsule.html
-                        label="funds raised"
-                        value="$1000" %}
+                        label="our goal"
+                        value="$180,000" %}
+                    <div class="donate__overview-rv">
+                        {% include graphics/mobile-home.svg %}
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,26 +73,86 @@
                 There are a zillion different ways to contribute to the Sexplanations Road Tour.
             </div>
             <div class="donate__ways-btns">
-                <button class="btn">Volunteer</button>
-                <button class="btn">Give</button>
-                <button class="btn">Sponsor</button>
+                <div class="donate__ways-btn">
+                    {% include graphics/volunteer.svg %}
+                    <button class="btn link-volunteer">Volunteer</button>
+                </div>
+                <div class="donate__ways-btn">
+                    {% include graphics/give.svg %}
+                    <button class="btn link-give">Give</button>
+                </div>
+                <div class="donate__ways-btn">
+                    {% include graphics/sponsor.svg %}
+                    <button class="btn link-sponsor">Sponsor</button>
+                </div>
             </div>
         </section>
     </div>
 
     <div class="section-row--purple-dark">
         <section class="section">
-            <div class="donate__panel">
-                <h2 class="heading-3 donate__panel-title">Volunteer</h2>
-                <div class="">
-                    For more than four years Sexplanations has been the go-to source for clinical
-                    sex edutainment on Youtube. The host, Dr. Lindsey Doe, shares her experiences
-                    teaching, counseling, coaching, and having sex herself to inspire curiousity.
-                    New videos are published every Wednesday. If you're not subscribed already,
-                    please do so and check us out on Facebook, Twitter, Tumblr, and Patreon.
+            <div id="volunteer" class="donate__panel-row">
+                <div class="donate__panel">
+                    <h2 class="heading-3 donate__panel-title">Volunteer</h2>
+                    <div class="donate__panel-text">
+                        From crunching numbers to making the website, this effort is entirely
+                        volunteer-driven. Maybe you know of a place we can set up in your town,
+                        or you can print flyers and share with others. We’ll gladly exchange your
+                        talent and time for cosmic karma and the warm fuzzy feeling of knowing
+                        you’ve done a good thing for communities like your own.
+                    </div>
+                    <button class="btn donate__panel-btn link-contact">Contact Us</button>
                 </div>
-                <button class="btn donate__panel-btn">Contact Us</button>
+                {% include graphics/volunteer.svg %}
             </div>
+
+            <div id="give" class="donate__panel-row">
+                {% include graphics/give.svg %}
+                <div class="donate__panel">
+                    <h2 class="heading-3 donate__panel-title">Give</h2>
+                    <div class="donate__panel-text">
+                        This is a project for the people, by the people. Tell us where you want
+                        us to go, fund meals and doggie daycare, earn swanky prizes like
+                        temporary tattoos and love letters.
+                    </div>
+                    <div class="donate__panel-text">
+                        Give in whatever ways make sense for you and that you feel best about.
+                        This is for you and for communities like yours.
+                    </div>
+                    <button class="btn donate__panel-btn link-donation-services">
+                        Ways to Donate
+                    </button>
+                </div>
+            </div>
+
+            <div id="sponsor" class="donate__panel-row">
+                <div class="donate__panel">
+                    <h2 class="heading-3 donate__panel-title">Sponsor</h2>
+                    <div class="donate__panel-text">
+                        While we’re all about the crowdsourcing, if you’re in a position to
+                        sponsor the Sexplanations Road Tour at a major level, we want to talk
+                        to you. Our goal is to engage audiences nationwide with valuable and
+                        entertaining education material. Let’s talk about how our goals align
+                        and what we can do on our trip to further your brand.
+                    </div>
+                    <button class="btn donate__panel-btn link-contact">Contact Us</button>
+                </div>
+                {% include graphics/sponsor.svg %}
+            </div>
+        </section>
+    </div>
+
+    <div id="services" class="section-row--pink">
+        <section class="section">
+            <h2 class="heading-3 donate__ways-headline">
+                Give through our Patreon
+            </h2>
+            <div class="separator"></div>
+            {% include donation_services.html standalone=true %}
+            <div class="heading-3 donate__ways-headline">
+                Make the sperm donor RV a reality!
+            </div>
+            <img src="/assets/images/rv-art.png" alt="RV transformation" class="donate__rv-img" />
         </section>
     </div>
 

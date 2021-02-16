@@ -1,0 +1,48 @@
+.dates__info-box {
+    width: 100%;
+    background-color: $purple-dark;
+    padding: 15px 0;
+}
+.dates__stops-headline {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+}
+.dates__stops {
+    display: flex;
+}
+.dates__stops-col {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 100px;
+}
+.dates__stop {
+    padding: 20px;
+    border-bottom: 2px solid $purple-dark;
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+.dates__stop-location {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dates__stops-col {
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .dates__stops {
+        flex-direction: column;
+    }
+    .dates__stop {
+        &:last-of-type {
+            border-bottom: 2px solid $purple-dark;
+        }
+    }
+    .dates__stop--last {
+        border-bottom: none !important;
+    }
+}

@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     background-color: $pink;
-    padding: 20px 40px;
+    padding: 10px 40px;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
     z-index: 10;
     .header__links {
@@ -83,6 +83,10 @@
     &:first-of-type {
         margin-left: 0;
     }
+    &.active {
+        padding-bottom: 8px;
+        border-bottom: 4px solid $orange;
+    }
 }
 .header__link--sexplanations {
     font-family: $satisfy;
@@ -106,6 +110,7 @@
     font-family: $satisfy;
     font-size: 6.854rem;
     line-height: 1;
+    margin-top: 60px;
     margin-bottom: 0;
 }
 .top__subheadline {

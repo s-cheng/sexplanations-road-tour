@@ -1,0 +1,129 @@
+.log__feeds {
+    display: flex;
+    justify-content: space-between;
+}
+.log__tumblr-post {
+    background-color: $purple-dark;
+    padding: 20px;
+    margin-top: 20px;
+    p {
+        margin: 0.8rem 0;
+    }
+    a {
+        color: $green;
+        word-break: break-all;
+        &:hover {
+            color: $green-dark;
+        }
+        &:visited {
+            color: $green;
+        }
+    }
+    blockquote {
+        font-size: 0.8rem;
+        padding-left: 20px;
+        margin: 10px;
+        border-left: 3px solid $orange;
+    }
+    img {
+        max-width: 400px;
+    }
+    li {
+        margin-left: 30px;
+    }
+}
+.log__tumblr-iframe-container {
+    max-width: 400px;
+}
+.log__tumblr-post-heading {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 1.777rem;
+    a {
+        word-break: normal;
+        text-decoration: none;
+    }
+}
+.log__tumblr-post-quote {
+    margin-bottom: 20px;
+}
+.log__tumblr-post-quote-source {
+    position: relative;
+    padding-left: 15px;
+    &:before {
+        position: absolute;
+        left: 0;
+        content: '-';
+    }
+}
+.log__tumblr-post-question {
+    position: relative;
+    background-color: #b75a9c;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    &:after {
+        position: absolute;
+        left: 35px;
+        bottom: -18px;
+        content: '';
+        border-top: 20px solid #b75a9c;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+    }
+}
+.log__tumblr-post-asker {
+    margin-left: 30px;
+    margin-bottom: 18px;
+}
+.log__tumblr-post-chat-line {
+    background-color: #b75a9c;
+    padding: 8px;
+    &:nth-of-type(2n) {
+        background-color: $purple;
+    }
+}
+a.log__tumblr-post-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: $pink;
+    text-decoration: none;
+    padding-top: 15px;
+    margin-top: 20px;
+    border-top: 1px solid $pink;
+    &:hover {
+        color: $pink;
+    }
+    &:visited {
+        color: $pink;
+    }
+}
+.log__twitter-feed {
+    width: 300px;
+    flex: none;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .log__feeds {
+        display: block;
+    }
+    .log__twitter-feed {
+        width: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .log__tumblr-post {
+        img {
+            max-width: 100%;
+        }
+    }
+    .log__tumblr-iframe-container {
+        max-width: 100%;
+    }
+}

@@ -6,6 +6,92 @@ youtubeBtns.forEach((btn) => {
     });
 });
 
+// link to FAQ section on Home page
+const faqBts = document.querySelectorAll('.link-faq');
+faqBts.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const section = document.getElementById('faq');
+        // if we are on the Home page already, we can scroll to the section
+        if (section) {
+            section.scrollIntoView(
+                {behavior: "smooth", block: "start", inline: "nearest"}
+            );
+        } else {
+            window.location = '/#faq';
+        }
+    });
+});
+
+// link to Donate page
+const donateBtns = document.querySelectorAll('.link-donate');
+donateBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/donate';
+    });
+});
+
+// scroll to Volunteer section on Donate page
+const volunteerBtns = document.querySelectorAll('.link-volunteer');
+volunteerBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const section = document.getElementById('volunteer');
+        // if we are on the Donate page already, we can scroll to the section
+        if (section) {
+            section.scrollIntoView(
+                {behavior: "smooth", block: "center", inline: "nearest"}
+            );
+        } else {
+            window.location = '/donate#volunteer';
+        }
+    });
+});
+// scroll to Give section on Donate page
+const giveBtns = document.querySelectorAll('.link-give');
+giveBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const section = document.getElementById('give');
+        // if we are on the Donate page already, we can scroll to the section
+        if (section) {
+            section.scrollIntoView(
+                {behavior: "smooth", block: "center", inline: "nearest"}
+            );
+        } else {
+            window.location = '/donate#give';
+        }
+    });
+});
+// scroll to Sponsor section on Donate page
+const sponsorBtns = document.querySelectorAll('.link-sponsor');
+sponsorBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const section = document.getElementById('sponsor');
+        // if we are on the Donate page already, we can scroll to the section
+        if (section) {
+            section.scrollIntoView(
+                {behavior: "smooth", block: "center", inline: "nearest"}
+            );
+        } else {
+            window.location = '/donate#sponsor';
+        }
+    });
+});
+
+// link to Services section on Donate page
+const servicesBtns = document.querySelectorAll('.link-donation-services');
+servicesBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/donate#services';
+    });
+});
+
+// link to Contact page
+const contactBtns = document.querySelectorAll('.link-contact');
+contactBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location = '/contact';
+    });
+});
+
 // show/hide the sticky header depending on page scroll position
 window.addEventListener('scroll', () => {
     const headerEl = document.getElementById('sticky-header');

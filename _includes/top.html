@@ -3,33 +3,62 @@
         <div class="header">
             <div class="header__social">
                 <div class="header__social-icons">
-                    <a href="https://twitter.com/elleteedee">
+                    <a href="https://twitter.com/elleteedee" target="_blank" rel="noopener"
+                        title="Twitter">
                         {% include icons/twitter.svg %}
                     </a>
-                    {% include icons/facebook.svg %}
-                    <a href="https://tumblingdoe.tumblr.com/">
+                    <a href="https://www.facebook.com/sexplanations" target="_blank" rel="noopener"
+                        title="Facebook">
+                        {% include icons/facebook.svg %}
+                    </a>
+                    <a href="https://tumblingdoe.tumblr.com/" target="_blank" rel="noopener"
+                        title="Tumblr">
                         {% include icons/tumblr.svg %}
                     </a>
-                    <a href="https://youtube.com/user/sexplanations">
+                    <a href="https://youtube.com/user/sexplanations" target="_blank" rel="noopener"
+                        title="Youtube">
                         {% include icons/youtube.svg %}
                     </a>
-                    {% include icons/instagram.svg %}
+                    <a href="https://www.instagram.com/sexplanations" target="_blank" rel="noopener"
+                        title="Instagram">
+                        {% include icons/instagram.svg %}
+                    </a>
                 </div>
             </div>
             <nav class="header__links">
+                {% if include.page == "home" %}
+                <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Home
                 </a>
+                {% if include.page == "donate" %}
+                <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/donate" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Donate
                 </a>
+                {% if include.page == "dates" %}
+                <a href={{ "/dates" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/dates" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Tour Dates
                 </a>
+                {% if include.page == "log" %}
+                <a href={{ "/log" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/log" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Trip Log
                 </a>
+                {% if include.page == "contact" %}
+                <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link active">
+                {% else %}
                 <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link">
+                {% endif %}
                     Contact
                 </a>
             </nav>
@@ -57,7 +86,7 @@
             <a href={{ "/" | prepend: site.baseurl }} class="header__link header__link--sexplanations">
                 Sexplanations Road Tour
             </a>
-            <a href={{ "/" | prepend: site.baseurl }} class="menu-item header__link">
+            <a href={{ "/log" | prepend: site.baseurl }} class="menu-item header__link">
                 Trip Log
             </a>
             <a href={{ "/contact" | prepend: site.baseurl }} class="menu-item header__link">
